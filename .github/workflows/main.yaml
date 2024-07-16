@@ -21,6 +21,9 @@ jobs:
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
+        shell: /usr/bin/bash -e {0}
+        env:
+          JAVA_HOME: /opt/hostedtoolcache/Java_Zulu_jdk/11.0.23-9/x64
         working-directory: /home/runner/work/DeployPractice/DeployPractice/./gradlew
 
       - name: Build with Gradle

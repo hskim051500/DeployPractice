@@ -21,11 +21,11 @@ jobs:
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-        working-directory: ./gradlew
+        working-directory: /home/runner/work/DeployPractice/DeployPractice/./gradlew
 
       - name: Build with Gradle
         run: ./gradlew build
-        working-directory: ./gradlew
+        working-directory: /home/runner/work/DeployPractice/DeployPractice/./gradlew
 
       - name: Docker build
         run: |
